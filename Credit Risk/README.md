@@ -1,9 +1,3 @@
-# Relationship between episode writer and IMDB rating for Breaking Bad episodes
+# Credit Risk Classification Models
 
-The purpose of this notebook is to investigate the question below and find out if the hypothesis is correct. In order to do that, this [dataset](https://www.kaggle.com/varpit94/breaking-bad-tv-show-all-seasons-episodes-data) (available at Kaggle by [Arpit Verma](https://www.kaggle.com/varpit94)) was used since it had the two necessary informations: the episode's writer and its rating.
-
-### Question
-Is there a relationship between the writer of an episode and its IMDB rating?
-
-### Hypothesis
-Being the creator of the series, Vince Gilligan probably writes the best episodes and, therefore, has the highest IMDB ratings.
+One of the most important real-live scenarios for Data Science is the prediction of credit risk, whether someone is going to become a defaulter. This project was created as part of the admission process of a company, meaning the data provided comes from a real company in the sector. My purpose was to create a machine learning model able to predict the defaulters within a scenario that is safe for the company, instead of trying to pursue the perfect model. During the development, two problems with the data had to be dealt with: the class imbalance and a huge amount of missing values for one of the variables. With that in mind, five algorithms based on decision trees were created, and the best for this particular problem was the XGBoost, using a special parameter to compensate for the class imbalance. The result was a precision of 98% for the negative class and a recall of 70% for the positive (defaulter) class.
